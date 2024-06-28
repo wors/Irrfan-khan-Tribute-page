@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    /* overflow: hidden; */
+}
+
+
+
+html{
+    overflow-y: scroll;
+}
+
+header{
+    padding: 20vw 5vw;
+    background: url("../images/img001.jpg");
+    background-size: cover;
+    /* background-position: 0px -20px; */
+    top: 0;
+}
+ nav{
+    font-size: 4vw;
+ }
+
+ div.nav{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: #262330;
+    color: #ddd;
+ }
+ .nav span{
+    font-size: 60%;
+    color: #cccd;
+ }
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 5vw;
+    /* padding: 10px; */
+    border: 1px solid red;
+}
+
+section .img-box{
+    width: 30vw;
+    height: 40vw;
+    box-shadow: unset 50vw 50vw red;
+}
+
+section .img-box img{
+    width: 30vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+section .text{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+section .text p{
+    line-height: 1.8rem;
+}
+
+section:nth-child(odd){
+    flex-direction: column;
+}
+
+section .img-box{
+    
+    box-shadow: unset 50vw 50vw red;
+}
+
+section .img-box2 img{
+    width: 100%;
+}
+
+section .text2{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+section .text2 p{
+    line-height: 1.8rem;
+}
+
+section:last-child{
+ flex-direction: row-reverse;
+}
+
+.pos-right img{
+    object-position: -30vw;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #ccc;
+}
+footer p {
+    text-align: center;
+}
