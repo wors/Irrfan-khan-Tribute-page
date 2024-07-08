@@ -13,7 +13,8 @@ html{
 
 header{
     padding: 20vw 5vw;
-    background: url("../images/img001.jpg");
+    background-color: #fff;
+    background-image: url("../images/img001.jpg");
     background-size: cover;
     top: 0;
     box-shadow: #262330 0 -65px 60px -10px inset;
@@ -201,6 +202,11 @@ footer p {
     }
     section .text,section:nth-child(4) .text{
         border: 0;
+    }
+    section h3{
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
     section .img-box img{
         width:100%;
