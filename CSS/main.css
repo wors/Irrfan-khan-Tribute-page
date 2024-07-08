@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
-    /* overflow: hidden; */
 }
 
 
@@ -17,7 +15,6 @@ header{
     padding: 20vw 5vw;
     background: url("../images/img001.jpg");
     background-size: cover;
-    /* background-position: 0px -20px; */
     top: 0;
     box-shadow: #262330 0 -65px 60px -10px inset;
 }
@@ -51,6 +48,7 @@ header{
     text-align: center;
     background-color: #262330;
     color: #ddd;
+    z-index: 1;
  }
  .nav span{
     font-size: 60%;
@@ -60,6 +58,7 @@ header{
 
 section{
     display: flex;
+    font-size: 1.2rem;
     flex-direction: row;
     margin: 5vh 5vw;
     background-color: #fff;
@@ -68,17 +67,21 @@ section{
 }
 
 section .img-box{
-    width: 30vw;
-    height: 40vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* height: 40vw; */
 }
 
 section .img-box img{
     width: 30vw;
     height: 40vw;
+    aspect-ratio: 1/2;
     object-fit: cover;
 }
 
 section .text{
+    border-left: 1px solid #000;
     display: flex;
     padding: 10px;
     margin: 10px;
@@ -109,6 +112,11 @@ section .text2 p{
 
 section:nth-child(4){
  flex-direction: row-reverse;
+}
+
+section:nth-child(4) .text{
+    border: 0px;
+    border-right: 1px solid ;
 }
 
 .pos-right img{
