@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    /* font-family: sans-serif; */
     /* overflow: hidden; */
 }
 
@@ -10,6 +10,7 @@
 
 html{
     overflow-y: scroll;
+    background-color: #332f41f5;
 }
 
 header{
@@ -18,17 +19,32 @@ header{
     background-size: cover;
     /* background-position: 0px -20px; */
     top: 0;
+    box-shadow: #262330 0 -65px 60px -10px inset;
 }
  nav{
+    font-family: arial;
+    font-style:italic;
     font-size: 4vw;
  }
+ nav h1{
+    filter: drop-shadow(5px 5px 10px #e69824);
+ }
+ nav::before{
+    position: relative;
+    top: 0;
+    content: "Tribute To";
+    font-size: 70%;
+    font-weight: 1000;
+ }
 
- div.nav{
+
+ main .nav{
     display: flex;
     flex-direction: column;
     top: 0;
     position: sticky;
     position: -webkit-sticky;
+    font-family:'Times New Roman', Times, serif;
     font-size: 1.2rem;
     padding: 5px;
     width: 100%;
@@ -46,14 +62,14 @@ section{
     display: flex;
     flex-direction: row;
     margin: 5vh 5vw;
-    /* padding: 10px; */
-    border: 1px solid red;
+    background-color: #fff;
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: 5px 5px 15px #0000004f;
 }
 
 section .img-box{
     width: 30vw;
     height: 40vw;
-    box-shadow: unset 50vw 50vw red;
 }
 
 section .img-box img{
@@ -65,9 +81,11 @@ section .img-box img{
 section .text{
     display: flex;
     padding: 10px;
+    margin: 10px;
     align-items: center;
 }
 section .text p{
+    font-family: sans-serif;
     line-height: 1.8rem;
 }
 
@@ -75,10 +93,6 @@ section:nth-child(odd){
     flex-direction: column;
 }
 
-section .img-box{
-    
-    box-shadow: unset 50vw 50vw red;
-}
 
 section .img-box2 img{
     width: 100%;
@@ -93,13 +107,75 @@ section .text2 p{
     line-height: 1.8rem;
 }
 
-section:last-child{
+section:nth-child(4){
  flex-direction: row-reverse;
 }
 
 .pos-right img{
     object-position: -30vw;
 }
+
+section:last-child{
+    padding: 15px;
+    background-image: url(../images/img006.jpg);
+    background-size: contain;
+    background-position: center 0px ;
+    background-repeat: no-repeat;
+    box-shadow: #fff 0 -450px 60px -40px inset;
+}
+
+
+section:last-child h3{
+    margin-bottom: 30%;
+    font-size: 3rem;
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+section:last-child h3::after{
+    content: "Movies";
+    position:relative;
+    color: transparent;
+    top: 5px;
+    left: -175px;
+    mix-blend-mode:color-dodge;
+    -webkit-text-stroke: 2px red;
+}
+.container{
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.container .card{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: 5px 5px 15px #0000004f;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.container .card .card-img img{
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+    aspect-ratio: 1/1.5;
+    object-fit: fill;
+}
+
+.container .card .card-text{
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform:capitalize;
+}
+
+
+
 
 footer{
     padding: 1rem;
